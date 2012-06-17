@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>学籍查询</title>
+<script src="clienthint.js"></script>
+</head>
+
+<body>
+
+<h1>学籍查询</h1>
+<hr />
+<table align="left" width="100" cellpadding="5">
+<tr><td><a href="query.htm">学籍查询<a></td></tr>
+<tr><td><a href="edit.htm">学籍编辑<a></td></tr>
+<tr><td><a href="delete.htm">学籍注销<a></td></tr>
+</table>
+&nbsp
+<form>
+学号:
+<input type="text" id="txt1"
+onkeyup="showHint(this.value)">
+</form>
+
+<p>结果:<span id="txtHint"></span></p>
+
+</body>
+</html>
+

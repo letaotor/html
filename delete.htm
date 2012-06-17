@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>学籍注销</title>
+<script src="queryhint.js"></script>
+<script src="edit.js"></script>
+</head>
+
+<body>
+
+<h1>学籍注销</h1>
+<hr />
+<table align="left" width="7%" cellpadding="5">
+<tr><td><a href="query.htm">学籍查询<a></td></tr>
+<tr><td><a href="edit.htm">学籍编辑<a></td></tr>
+<tr><td><a href="delete.htm">学籍注销<a></td></tr>
+</table>
+&nbsp
+<form onsubmit="return process('delete')" >
+<table>
+<tr>
+<td>
+学号:
+<input type="text", id="id" 
+onkeyup="showHint(this.value, 'delete')" />
+</td>
+</tr>
+<tr>
+<td>
+<span id="txtHint"></span>
+</td>
+</tr>
+<tr>
+<td align="right">
+<input type="submit" value="注销" />
+</td>
+</tr>
+<tr>
+<td>
+<span id="result"></span>
+</td>
+</tr>
+</table>
+</form>
+</body>
+</html>
